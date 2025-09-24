@@ -30,12 +30,21 @@ public:
     bool containsDuplicate(vector<int> & nums){
         unordered_map<int,int>map;
         for(int i=0;i<nums.size();i++){
-            map[nums[i]]++;
             if(map.find(nums[i])!=map.end()){
                 return true;
             }
+            map[nums[i]]++;
         }
         return false;
     }
 
 };
+
+
+//approach 1 
+//Blind-75 No.217 
+// 1. the goal is to find if the array contains duplicate 
+// 2. we check the elements one by one if found we return true
+// 3. we iterate through the array and map the elements to the map 
+// 4. if we find the element in the map we return true 
+// 5. if we complete the loop we return false
