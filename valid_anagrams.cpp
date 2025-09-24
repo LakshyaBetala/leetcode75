@@ -38,3 +38,11 @@ public:
 
     }
 };
+
+//approach 1
+//Blind-75 No.242
+// 1. the goal is to find if the string t is an anagram of s.
+// 2. step-1 is to check the size t,s s.size(), t.size() is not equal then immediately 
+// 3. use two maps to store the frequency of each strings t and s 
+// 4. since the contraints that s and t are lowercase alphabet we substract it ASCII characters 'a'
+// 5. we iterate again both hashmaps check frequency if different return false
